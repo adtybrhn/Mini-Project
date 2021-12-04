@@ -1,0 +1,912 @@
+<html>
+<head>
+    <title>Mini Project Card Database</title>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="function/script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <!-- <link rel="stylesheet" href="style/modal.css"> -->
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="100" height="45" style="margin-left: 15px;" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Homepage <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+</head>
+
+<body>
+
+
+<!-- ALERT -->
+<div class="alert alert-info alert-dismissible fade show" role="alert" style="margin-top: 15px;">
+    <strong> New Arrival on October 2021 Check It Out! </strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+<!-- GRID MENU -->
+
+<!-- ULTRA RARE -->
+<h1 style="margin-left: 20px;">Ultra Rare</h1>
+<div class="row" style="margin-top: 10px; margin-left: 15px; margin-right: 15px; margin-bottom: 20px;">
+    <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+      <img class="card-img-top" src="img/UR/Obelisk.png" alt="Card image cap">
+      <div class="card-body" style="padding: 15px;">
+          <h5 class="card-title"  >Obelisk The Tormentor</h5>
+          <h6 class="card-subtitle sm-1 text-muted">Divine-Beast / God of Egypt</h6>
+          <hr>
+          <a style="float: left; padding: 6 0px;"><strong>$ 320</strong></a>
+          <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#myModal3">More Info</button>
+      </div>
+    </div>
+
+    <div id="myModal3"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Obelisk The Tormentor</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/UR/Card/Obelisk.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#myModal3">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#myModal3">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+      <img class="card-img-top" src="img/UR/Ra.jpg" alt="Card image cap">
+      <div class="card-body" style="padding: 15px;">
+          <h5 class="card-title"  >Winged Dragon of Ra</h5>
+          <h6 class="card-subtitle sm-1 text-muted">Divine-Beast / God of Egypt</h6>
+          <hr>
+          <a style="float: left; padding: 6 0px;"><strong>$ 320</strong></a>
+          <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#myModal1">More Info</button>
+      </div>
+    </div>
+
+    <div id="myModal1"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Winged Dragon of Ra</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/UR/Card/Ra.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#myModal1">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#myModal1">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+      <img class="card-img-top" src="img/UR/Osiris.png" alt="Card image cap">
+      <div class="card-body" style="padding: 15px;">
+          <h5 class="card-title"  >Sliffer The Sky Dragon</h5>
+          <h6 class="card-subtitle sm-1 text-muted">Divine-Beast / God of Egypt</h6>
+          <hr>
+          <a style="float: left; padding: 6 0px;"><strong>$ 320</strong></a>
+          <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#osirisModal">More Info</button>
+      </div>
+    </div>
+    
+    <div id="osirisModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Sliffer The Sky Dragon</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/UR/Card/Osiris.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#osirisModal">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#osirisModal">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+</div>
+<!-- END OF ULTRA RARE -->
+
+<!-- SUPER RARE -->
+<h1 style="margin-left: 20px;">Super Rare</h1>
+<div class="row" style="margin-top: 10px; margin-left: 15px; margin-right: 15px; margin-bottom: 20px;">
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/SR/DarkMagicianofChaos-TF04-JP-VG.png" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >D. Magician of Chaos</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Spellcaster / Effect</h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 120</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#bmChaos">More Info</button>
+    </div>
+  </div>
+
+  <div id="bmChaos"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="width: 450px;">
+        <div class="modal-content">
+                <div class="modal-header"><h3><strong>D. Magician of Chaos</strong></h3>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/SR/Card/Dark Magician of Chaos.jpg">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#bmChaos">Add To Cart</button>
+                  <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#bmChaos">Buy Now</button>
+                </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/SR/BlackLusterSoldier-TF04-JP-VG.jpg" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >Black Luster Soldier</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Warrior / Ritual</h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 120</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#blackLuster">More Info</button>
+    </div>
+  </div>
+
+  <div id="blackLuster"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="width: 450px;">
+        <div class="modal-content">
+                <div class="modal-header"><h3><strong>Black Luster Soldier</strong></h3>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/SR/Card/black luster.jpg">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#blackLuster">Add To Cart</button>
+                  <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#blackLuster">Buy Now</button>
+                </div>
+        </div>
+    </div>
+  </div>
+
+    <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+        <img class="card-img-top" src="img/SR/blue-eyes-ultimate-dragon-wallpaper-0.jpg" alt="Card image cap">
+        <div class="card-body" style="padding: 15px;">
+            <h5 class="card-title"  >B.Eyes Ultimate Dragon</h5>
+            <h6 class="card-subtitle sm-1 text-muted">Dragon / Fusion</h6>
+            <hr>
+            <a style="float: left; padding: 6 0px;"><strong>$ 120</strong></a>
+            <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#eyesUltimate">More Info</button>
+        </div>
+    </div>
+
+    
+  <div id="eyesUltimate"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="width: 450px;">
+        <div class="modal-content">
+                <div class="modal-header"><h3><strong>B. Eyes Ultimate Dragon</strong></h3>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/SR/Card/blue eyes ultimate dragon.jpg">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#eyesUltimate">Add To Cart</button>
+                  <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#eyesUltimate">Buy Now</button>
+                </div>
+        </div>
+    </div>
+  </div>
+
+
+    <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+      <img class="card-img-top" src="img/SR/blue eyes.jpg" alt="Card image cap">
+      <div class="card-body" style="padding: 15px;">
+          <h5 class="card-title"  >B. Eyes White Dragon</h5>
+          <h6 class="card-subtitle sm-1 text-muted">Dragon</h6>
+          <hr>
+          <a style="float: left; padding: 6 0px;"><strong>$ 120</strong></a>
+          <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#eyesDragon">More Info</button>
+      </div>
+    </div>
+
+    <div id="eyesDragon"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>B. Eyes White Dragon</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/SR/Card/BLUE EYES WHITE DRAGON.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#eyesDragon">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#eyesDragon">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+      <img class="card-img-top" src="img/SR/GateGuardian-OW.png" alt="Card image cap">
+      <div class="card-body" style="padding: 15px;">
+          <h5 class="card-title"  >Gate Guardian</h5>
+          <h6 class="card-subtitle sm-1 text-muted">Warrior / Effect</h6>
+          <hr>
+          <a style="float: left; padding: 6 0px;"><strong>$ 120</strong></a>
+          <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#gateGuard">More Info</button>
+      </div>
+    </div>
+
+    <div id="gateGuard"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Gate Guardian</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/SR/Card/Gate Guardian.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#gateGuard">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#gateGuard">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+      <img class="card-img-top" src="img/SR/Raigeki.png" alt="Card image cap">
+      <div class="card-body" style="padding: 15px;">
+          <h5 class="card-title"  >Raigeki</h5>
+          <h6 class="card-subtitle sm-1 text-muted">Spell Card</h6>
+          <hr>
+          <a style="float: left; padding: 6 0px;"><strong>$ 70</strong></a>
+          <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#raigeki">More Info</button>
+      </div>    
+    </div>
+
+    <div id="raigeki"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Raigeki</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/SR/Card/raigeki.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#raigeki">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#raigeki">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+      <img class="card-img-top" src="img/SR/Dark Hole.png" alt="Card image cap">
+      <div class="card-body" style="padding: 15px;">
+          <h5 class="card-title"  >Dark Hole</h5>
+          <h6 class="card-subtitle sm-1 text-muted">Spell Card</h6>
+          <hr>
+          <a style="float: left; padding: 6 0px;"><strong>$ 70</strong></a>
+          <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#darkHole">More Info</button>
+      </div>    
+    </div>
+
+    <div id="darkHole"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Dark Hole</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/SR/Card/Dark Hole.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#darkHole">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#darkHole">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+      <img class="card-img-top" src="img/SR/BlackPendant-OW.png" alt="Card image cap">
+      <div class="card-body" style="padding: 15px;">
+          <h5 class="card-title"  >Black Pendant</h5>
+          <h6 class="card-subtitle sm-1 text-muted">Equip Card</h6>
+          <hr>
+          <a style="float: left; padding: 6 0px;"><strong>$ 80</strong></a>
+          <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#blackPendant">More Info</button>
+      </div>    
+    </div>
+
+    <div id="blackPendant"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Black Pendant</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/SR/Card/black pendant.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#blackPendant">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#blackPendant">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+      <img class="card-img-top" src="img/SR/BlackLusterRitual-TF04-JP-VG.jpg" alt="Card image cap">
+      <div class="card-body" style="padding: 15px;">
+          <h5 class="card-title"  >Black Luster Ritual</h5>
+          <h6 class="card-subtitle sm-1 text-muted">Warrior / Ritual</h6>
+          <hr>
+          <a style="float: left; padding: 6 0px;"><strong>$ 90</strong></a>
+          <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#blackLusterRitual">More Info</button>
+      </div>
+    </div>
+  
+    <div id="blackLusterRitual"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Black Luster Ritual</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/SR/Card/black luster ritual.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#blackLusterRitual">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#blackLusterRitual">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+<!-- END OF SUPER RARE -->
+
+<!-- RARE  -->
+<h1 style="margin-left: 20px;">Rare</h1>
+<div class="row" style="margin-top: 10px; margin-left: 15px; margin-right: 15px; margin-bottom: 20px;">
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/R/Jinzo.jpg" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >Jinzo</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Machine / Effect</h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 50</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#jinzoModal">More Info</button>
+      </div>
+    </div>
+  
+    <div id="jinzoModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Jinzo</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/R/Card/Jinzo.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#jinzoModal">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#jinzoModal">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/R/SummonedSkull-OW.png" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >Summoned Skull</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Fiend</h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 50</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#skullModal">More Info</button>
+      </div>
+    </div>
+  
+    <div id="skullModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Summoned Skull</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/R/Card/Summoned Skull.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#skullModal">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#skullModal">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/R/Dark Magician.png" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >Dark Magician</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Spellcaster</h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 50</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#dmModal">More Info</button>
+      </div>
+    </div>
+  
+    <div id="dmModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Dark Magician</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/R/Card/Dark Magician.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#dmModal">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#dmModal">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/R/Dark Magician Girl.jpg" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >Dark Magician Girl</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Spellcaster / Effect</h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 50</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#dgirlModal">More Info</button>
+      </div>
+    </div>
+  
+    <div id="dgirlModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Dark Magician Girl</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/R/Card/Dark Magician Girl.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#dgirlModal">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#dgirlModal">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/R/Labyrinth-Wall-CardFL.jpg" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >Labyrinth Wall</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Rock</h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 50</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#wallModal">More Info</button>
+      </div>
+    </div>
+  
+    <div id="wallModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Labyrinth Wall</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/R/Card/Labirin wall.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#wallModal">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#wallModal">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/R/MysticalElf-OW.png" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >Mystical Elf</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Spellcaster</h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 30</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#elfModal">More Info</button>
+    </div>
+  </div>
+
+  <div id="elfModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="width: 450px;">
+        <div class="modal-content">
+                <div class="modal-header"><h3><strong>Mistycal Elf</strong></h3>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/R/Card/Mystical Elf.jpg">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#elfModal">Add To Cart</button>
+                  <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#elfModal">Buy Now</button>
+                </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/R/Forest-TF04-JP-VG.jpg" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >Forest</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Field / Spell Card </h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 30</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#forestModal">More Info</button>
+    </div>
+  </div>
+
+  <div id="forestModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="width: 450px;">
+        <div class="modal-content">
+                <div class="modal-header"><h3><strong>Forest</strong></h3>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/R/Card/Forest.jpg">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#forestModal">Add To Cart</button>
+                  <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#forestModal">Buy Now</button>
+                </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/R/Wasteland-TF04-JP-VG.jpg" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >Wasteland</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Field / Spell Card </h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 30</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#wasteModal">More Info</button>
+    </div>
+  </div>
+
+  <div id="wasteModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="width: 450px;">
+        <div class="modal-content">
+                <div class="modal-header"><h3><strong>Wasteland</strong></h3>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/R/Card/Wasteland.jpg">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#wasteModal">Add To Cart</button>
+                  <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#wasteModal">Buy Now</button>
+                </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/R/Mountain-TF04-JP-VG.jpg" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >Mountain</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Field / Spell Card </h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 30</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#mountModal">More Info</button>
+    </div>
+  </div>
+
+  <div id="mountModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="width: 450px;">
+        <div class="modal-content">
+                <div class="modal-header"><h3><strong>Mountain</strong></h3>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/R/Card/Mountain.jpg">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#mountModal">Add To Cart</button>
+                  <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#mountModal">Buy Now</button>
+                </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/R/Sogen.jpg" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >Sogen</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Field / Spell Card </h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 30</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#sogenModal">More Info</button>
+    </div>
+  </div>
+
+  <div id="sogenModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="width: 450px;">
+        <div class="modal-content">
+                <div class="modal-header"><h3><strong>Sogen</strong></h3>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/R/Card/Sogen.jpg">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#sogenModal">Add To Cart</button>
+                  <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#sogenModal">Buy Now</button>
+                </div>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/R/Umi-TF04-JP-VG.jpg" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >Umi</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Field / Spell Card </h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 30</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#umiModal">More Info</button>
+ 
+    </div>
+  </div>
+
+  <div id="umiModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="width: 450px;">
+        <div class="modal-content">
+                <div class="modal-header"><h3><strong>Umi</strong></h3>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/R/Card/Umi.jpg">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#umiModal">Add To Cart</button>
+                  <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#umiModal">Buy Now</button>
+                </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+    <img class="card-img-top" src="img/R/Yami-DG-EN-VG-Field.png" alt="Card image cap">
+    <div class="card-body" style="padding: 15px;">
+        <h5 class="card-title"  >Yami</h5>
+        <h6 class="card-subtitle sm-1 text-muted">Field / Spell Card </h6>
+        <hr>
+        <a style="float: left; padding: 6 0px;"><strong>$ 30</strong></a>
+        <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#yamiModal">More Info</button>
+ 
+    </div>
+  </div>
+
+  <div id="yamiModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="width: 450px;">
+        <div class="modal-content">
+                <div class="modal-header"><h3><strong>Yami</strong></h3>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/R/Card/Yami.jpg">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#yamiModal">Add To Cart</button>
+                  <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#yamiModal">Buy Now</button>
+                </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- END OF RARE -->
+
+
+<h1 style="margin-left: 20px;">Normal</h1>
+<div class="row" style="margin-top: 10px; margin-left: 15px; margin-right: 15px; margin-bottom: 20px;">
+    <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+      <img class="card-img-top" src="img/N/Moon Envoy.jpg" alt="Card image cap">
+      <div class="card-body" style="padding: 15px;">
+          <h5 class="card-title"  >Moon Envoy</h5>
+          <h6 class="card-subtitle sm-1 text-muted">Warrior</h6>
+          <hr>
+          <a style="float: left; padding: 6 0px;"><strong>$ 3</strong></a>
+          <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#moonModal">More Info</button>
+      </div>
+    </div>
+
+    <div id="moonModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Moon Envoy</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/N/Card/Moon Envoy.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#moonModal">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#moonModal">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
+      <img class="card-img-top" src="img/N/SoulofthePure-TF04-EN-VG.jpg" alt="Card image cap">
+      <div class="card-body" style="padding: 15px;">
+          <h5 class="card-title"  >Soul of The Pure</h5>
+          <h6 class="card-subtitle sm-1 text-muted">Spell Card</h6>
+          <hr>
+          <a style="float: left; padding: 6 0px;"><strong>$ 3</strong></a>
+          <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#soulModal">More Info</button>
+      </div>
+    </div>
+
+    <div id="soulModal"class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="width: 450px;">
+          <div class="modal-content">
+                  <div class="modal-header"><h3><strong>Soul of The Pure</strong></h3>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/N/Card/SoulofthePure.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal" data-target="#soulModal">Add To Cart</button>
+                    <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal" data-target="#soulModal">Buy Now</button>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+
+
+
+
+
+
+<footer class="page-footer bg-dark pt-2">
+  <div class="container-fluid text-center text-md-left" >
+    <div class="row" style="margin-left: 30px; margin-right: 50px;">
+      <div class="col-md-7 mt-md-0 mt-3" > 
+        <a class="navbar-brand" href="#"><img src="img/logo2.png" alt=""  height="60"  ></a>
+        <p style="color: white; text-align: justify;" >The Yu-Gi-Oh! Trading Card Game is a Japanese collectible card game developed and published by Konami. It is based on the fictional game of Duel Monsters created by manga artist Kazuki Takahashi, which appears in portions of the manga franchise 
+          <br>
+          Yu-Gi-Oh! (under the name of "Magic and Wizards"), 
+          and is the central plot device throughout its various anime adaptations and spinoff series.</p>
+      </div>
+
+      <br>
+
+      <hr class="clearfix w-100 d-md-none">
+      <div class="col-md-4" style="float: right;" >
+
+        <h4 class="text-uppercase text-left" style="color: white; margin-top: 5px; font-size: 20px;">Contact Us</h4>
+
+        <ul class="list-unstyled text-left" >
+          <li> 
+            <div class="form-group" style="width: 370px;" >
+              <!-- <label for="exampleInputEmail1" style="color: white;">Email address</label> -->
+              <input type="email" class="form-control"  style="margin-bottom: 5px; font-size: 12px;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+            
+              <div class="form-group" style="width: 370px;">
+                <!-- <label for="exampleFormControlTextarea1" style="color: white; margin-top: 10px;">Message</label> -->
+                <textarea class="form-control" id="exampleFormControlTextarea1" style="font-size: 12px;" rows="3" placeholder="Text a Message"></textarea>
+                <button type="button" class="btn btn-warning" style="float: right; margin-top: 5px;"><strong>Send</strong></button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr style="margin-bottom: 2px;">
+  <div class="page-footer text-center bg-dark" style="color: white; padding: 10px;">
+    <strong> © 2021 Mini Project - Burhan Aditya </strong>
+  </div>
+
+</footer>
+
+
+</html>
