@@ -1,0 +1,52 @@
+.alert {
+  width:40%; 
+  margin-top: 10px;   
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+.footer {  
+  position: relative;
+  /* right: 0;
+  bottom: 0;
+  left: 0; */
+  /* margin-bottom: 10px; */
+
+  /* text-align: center ; */
+}
+
+.btn{
+  font-size: 14px;
+  margin-top: 4px;
+
+}
+
+h6 {
+  font-size: 10px;
+  color: #fff;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+.modal {
+  text-align: center;
+  padding: 0px;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  color: #fff;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
