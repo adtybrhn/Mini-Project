@@ -37,7 +37,6 @@
     </nav>
 
 </head>
-
 <body>
 
 
@@ -52,15 +51,15 @@
 <!-- GRID MENU -->
 
 <!-- ULTRA RARE -->
-<h1 style="margin-left: 20px;">Ultra Rare</h1>
-<div class="row" style="margin-top: 10px; margin-left: 15px; margin-right: 15px; margin-bottom: 20px;">
+<h1 style="margin-left: 20px;">Ultra Rare</h1> 
+<div class="row" style="margin-top: 10px; margin-left: 15px; margin-right: 15px; margin-bottom: 1px;">
     <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
-      <img class="card-img-top" src="img/UR/Obelisk.png" alt="Card image cap">
+      <img class="card-img-top" src="img/UR/Obelisk.png" alt="Card image cap" onclick="soldout()">
       <div class="card-body" style="padding: 15px;">
           <h5 class="card-title"  >Obelisk The Tormentor</h5>
           <h6 class="card-subtitle sm-1 text-muted">Divine-Beast / God of Egypt</h6>
           <hr>
-          <a style="float: left; padding: 6 0px;"><strong>$ 320</strong></a>
+          <a style="float: left; padding: 6 0px;" class="sold"><strong>$ 320</strong></a>
           <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#myModal3">More Info</button>
       </div>
     </div>
@@ -86,12 +85,12 @@
 
 
     <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
-      <img class="card-img-top" src="img/UR/Ra.jpg" alt="Card image cap">
+      <img class="card-img-top" src="img/UR/Ra.jpg" alt="Card image cap" onclick="available()">
       <div class="card-body" style="padding: 15px;">
           <h5 class="card-title"  >Winged Dragon of Ra</h5>
           <h6 class="card-subtitle sm-1 text-muted">Divine-Beast / God of Egypt</h6>
           <hr>
-          <a style="float: left; padding: 6 0px;"><strong>$ 320</strong></a>
+          <a style="float: left; padding: 6 0px;" class="avail"><strong>$ 320</strong></a>
           <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#myModal1">More Info</button>
       </div>
     </div>
@@ -116,12 +115,12 @@
     </div>
 
     <div class="card" style="width: 12rem; height: 20rem; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(245, 245, 245);">
-      <img class="card-img-top" src="img/UR/Osiris.png" alt="Card image cap">
+      <img class="card-img-top" src="img/UR/Osiris.png" alt="Card image cap" onclick="soon()">
       <div class="card-body" style="padding: 15px;">
           <h5 class="card-title"  >Sliffer The Sky Dragon</h5>
           <h6 class="card-subtitle sm-1 text-muted">Divine-Beast / God of Egypt</h6>
           <hr>
-          <a style="float: left; padding: 6 0px;"><strong>$ 320</strong></a>
+          <a style="float: left; padding: 6 0px;" class="soon"><strong>$ 320</strong></a>
           <button class="btn btn-primary" style="float: right; font-size: small;" data-toggle="modal" data-target="#osirisModal">More Info</button>
       </div>
     </div>
@@ -145,6 +144,8 @@
       </div>
     </div>
 </div>
+<h5 style="color: black; margin-left: 20px; margin-bottom: 0px; " class="note note">*Limited Card</h5>
+<h5 style="color: black; margin-left: 20px; margin-bottom: 20px; font-style: italic;" class="note note2">**Click an image to check product availability </h5>
 <!-- END OF ULTRA RARE -->
 
 <!-- SUPER RARE -->
@@ -893,7 +894,13 @@
               <div class="form-group" style="width: 370px;">
                 <!-- <label for="exampleFormControlTextarea1" style="color: white; margin-top: 10px;">Message</label> -->
                 <textarea class="form-control" id="exampleFormControlTextarea1" style="font-size: 12px;" rows="3" placeholder="Text a Message"></textarea>
-                <button type="button" class="btn btn-warning" style="float: right; margin-top: 5px;"><strong>Send</strong></button>
+                <button type="button" id="btnSend" class="btn btn-warning" style="float: right; margin-top: 5px;"><strong>Send</strong></button>
+                  <script>
+                    document.getElementById("btnSend").addEventListener("click", function() {
+                      alert("Your message has been sent");
+                    });
+                  </script>
+
               </div>
             </div>
           </li>
