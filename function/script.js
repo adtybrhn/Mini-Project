@@ -9,12 +9,10 @@ $(document).ready(function () {
     });
 });
 
-function soon() {
-    var x = document.getElementsByClassName("soon");
-    x[0].innerHTML = "Available";
-  }  
-
-document.getElementById(id).addEventListener("click", functionname)
+function myfunction() {
+    alert('Your message has been sent');
+}
+document.getElementsByClassName('test')[0].onclick = myfunction;
 
 function stock() {
     var x = document.getElementById("obelisk");
@@ -26,3 +24,4 @@ function stock() {
     var z = document.getElementById("osiris");
     z.innerHTML = "Soon";
   }
+
