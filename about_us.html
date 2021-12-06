@@ -15,10 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
-    <!-- <link rel="stylesheet" href="style/modal.css"> -->
 
     <!-- NAVBAR -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="100" height="45" style="margin-left: 15px;" ></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,13 +79,26 @@
         <ul class="list-unstyled text-left" >
           <li> 
             <div class="form-group" style="width: 370px;" >
-              <!-- <label for="exampleInputEmail1" style="color: white;">Email address</label> -->
               <input type="email" class="form-control"  style="margin-bottom: 5px; font-size: 12px;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
             
               <div class="form-group" style="width: 370px;">
-                <!-- <label for="exampleFormControlTextarea1" style="color: white; margin-top: 10px;">Message</label> -->
-                <textarea class="form-control" id="exampleFormControlTextarea1" style="font-size: 12px;" rows="3" placeholder="Text a Message"></textarea>
-                <button type="button" class="btn btn-warning" style="float: right;  margin-top: 5px;"><strong>Send</strong></button>
+                <textarea class="form-control" id="exampleFormControlTextarea1" style="font-size: 12px;" rows="3" placeholder="Text a Message" 
+                onkeydown="keydownFunction()" onkeyup="keyupFunction()"></textarea>
+                <button type="button" class="test btn btn-warning" style="float: right; margin-top: 5px;"><strong>Send</strong></button>
+                    <script>
+                      function terkirim() {
+                        alert('Your message has been sent');
+                        }
+                      document.getElementsByClassName('test')[0].onclick = terkirim;
+
+                      function keydownFunction() {
+                        document.getElementsByTagName("textarea")[0].style.backgroundColor = "white";
+                      }
+                      
+                      function keyupFunction() {
+                        document.getElementsByTagName("textarea")[0].style.backgroundColor = "#F5EEDC";
+                      }
+                      </script>
               </div>
             </div>
           </li>
