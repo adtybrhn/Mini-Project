@@ -6,6 +6,7 @@
   margin: auto;
 }
 
+
 .footer {  
   position: relative;
   /* right: 0;
@@ -21,6 +22,15 @@
   margin-top: 4px;
 
 }
+
+.note{
+  font-size: 13px;
+}
+
+.note2{
+  font-size: 12px;
+}
+
 
 h6 {
   font-size: 10px;
