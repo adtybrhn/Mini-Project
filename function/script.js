@@ -9,16 +9,6 @@ $(document).ready(function () {
     });
 });
 
-function soldout() {
-    var x = document.getElementsByClassName("sold");
-    x[0].innerHTML = "Sold Out";
-  }
-
-function available() {
-    var x = document.getElementsByClassName("avail");
-    x[0].innerHTML = "Available";
-  } 
-
 function soon() {
     var x = document.getElementsByClassName("soon");
     x[0].innerHTML = "Available";
@@ -26,3 +16,13 @@ function soon() {
 
 document.getElementById(id).addEventListener("click", functionname)
 
+function stock() {
+    var x = document.getElementById("obelisk");
+    x.innerHTML = "Sold Out";
+
+    var y = document.getElementById("ra");
+    y.innerHTML = "Available";
+
+    var z = document.getElementById("osiris");
+    z.innerHTML = "Soon";
+  }
